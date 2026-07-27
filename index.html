@@ -1,1 +1,43 @@
-<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>سياسة الخصوصية</title></head><body><h1>سياسة الخصوصية</h1><p>تطبيق الجمارك القطرية للهاتف المحمول</p></body></html>
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="سياسة الخصوصية لتطبيق الجمارك القطرية للهاتف المحمول، الإصدار 1.0، تاريخ السريان 12 يوليو 2026.">
+  <meta name="robots" content="index,follow">
+  <title>سياسة الخصوصية | تطبيق الجمارك القطرية للهاتف المحمول</title>
+  <style>
+    :root{--brand:#7a173b;--ink:#272529;--muted:#6d686b;--line:#eadfe4;--panel:#faf6f8;--link:#6e1435}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f5f3f4;color:var(--ink);font-family:"Noto Sans Arabic",Tahoma,Arial,sans-serif;line-height:1.95}
+    header{background:#fff;border-bottom:1px solid var(--line)}.brand{max-width:980px;margin:auto;padding:16px 24px;font-weight:700;color:var(--brand);font-size:.96rem}
+    main{max-width:980px;margin:30px auto;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 12px 34px rgba(44,26,34,.06);overflow:hidden}
+    .hero{padding:46px 54px 38px;background:linear-gradient(145deg,#fff 0%,var(--panel) 100%);border-right:7px solid var(--brand);border-bottom:1px solid var(--line)}
+    h1{margin:0 0 6px;color:var(--brand);font-size:clamp(2rem,5vw,3rem);line-height:1.35}.subtitle{margin:0 0 13px;font-size:1.25rem;font-weight:700}.meta{margin:0;color:var(--muted);font-size:.96rem}
+    article{padding:38px 54px 56px}h2{color:var(--brand);font-size:1.42rem;line-height:1.55;margin:2.15rem 0 .7rem;padding-bottom:.45rem;border-bottom:1px solid var(--line);scroll-margin-top:16px}h2:first-child{margin-top:0}
+    h3{font-size:1.12rem;color:#4c4549;margin:1.35rem 0 .35rem}p{margin:.45rem 0 1rem}ul{margin:.45rem 0 1.3rem;padding:0 1.35rem 0 0}li{margin:.42rem 0;padding-right:.25rem}a{color:var(--link);text-decoration-thickness:1px;text-underline-offset:3px;overflow-wrap:anywhere}
+    .loading{color:var(--muted)}.error{padding:16px;border:1px solid #efcfd9;background:#fff8fa;border-radius:10px;color:#6e1435}
+    footer{max-width:980px;margin:0 auto 34px;padding:0 24px;color:var(--muted);text-align:center;font-size:.88rem}
+    @media(max-width:720px){main{margin:0;border-radius:0;border-left:0;border-right:0}.hero,article{padding-right:22px;padding-left:22px}.hero{padding-top:32px;padding-bottom:28px}}
+    @media print{body{background:#fff}header,footer{display:none}main{margin:0;max-width:none;border:0;box-shadow:none}.hero,article{padding-right:0;padding-left:0}h2{break-after:avoid}li,p{orphans:3;widows:3}}
+  </style>
+</head>
+<body>
+  <header><div class="brand">الهيئة العامة للجمارك &nbsp;|&nbsp; دولة قطر</div></header>
+  <main>
+    <section class="hero" aria-labelledby="policy-title">
+      <h1 id="policy-title">سياسة الخصوصية</h1>
+      <p class="subtitle">تطبيق الجمارك القطرية للهاتف المحمول</p>
+      <p class="meta">تاريخ السريان: 12 يوليو 2026 &nbsp;|&nbsp; الإصدار 1.0</p>
+    </section>
+    <article id="policy-content" aria-live="polite"><p class="loading">جارٍ تحميل سياسة الخصوصية…</p></article>
+    <noscript><article><p class="error">يلزم تفعيل JavaScript لعرض هذه الصفحة. ويمكن قراءة النسخة العامة من ملفات المستودع.</p></article></noscript>
+  </main>
+  <footer>الهيئة العامة للجمارك، دولة قطر &nbsp;•&nbsp; سياسة الخصوصية &nbsp;•&nbsp; الإصدار 1.0</footer>
+  <script>
+    const target=document.getElementById('policy-content');
+    Promise.all(['part-1.html','part-2.html','part-3.html','part-4.html'].map(path=>fetch(path).then(r=>{if(!r.ok)throw new Error(path);return r.text()})))
+      .then(parts=>{target.innerHTML=parts.join('')})
+      .catch(()=>{target.innerHTML='<p class="error">تعذر تحميل نص السياسة مؤقتًا. يرجى إعادة تحميل الصفحة.</p>'});
+  </script>
+</body>
+</html>
